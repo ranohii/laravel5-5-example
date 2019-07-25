@@ -20,7 +20,7 @@ class DatabaseSeeder extends Seeder
             [
                 'name' => 'GreatAdmin',
                 'email' => 'admin@la.fr',
-                'password' => bcrypt('>6~aGej`Cp&eR=g8'),
+                'password' => bcrypt('admin'),
                 'role' => 'admin',
                 'valid' => true,
                 'confirmed' => true,
@@ -31,7 +31,7 @@ class DatabaseSeeder extends Seeder
             [
                 'name' => 'GreatRedactor',
                 'email' => 'redac@la.fr',
-                'password' => bcrypt('zE6zxV6f5*m$7]wQ'),
+                'password' => bcrypt('redac'),
                 'role' => 'redac',
                 'valid' => true,
                 'confirmed' => true,
@@ -42,7 +42,7 @@ class DatabaseSeeder extends Seeder
             [
                 'name' => 'Walker',
                 'email' => 'walker@la.fr',
-                'password' => bcrypt('=ze"k8AAp3d$8$(r'),
+                'password' => bcrypt('walker'),
                 'role' => 'user',
                 'valid' => true,
                 'confirmed' => true,
@@ -53,7 +53,7 @@ class DatabaseSeeder extends Seeder
             [
                 'name' => 'Slacker',
                 'email' => 'slacker@la.fr',
-                'password' => bcrypt('|h"AxeO`s^19Y7Lr'),
+                'password' => bcrypt('slacker'),
                 'role' => 'user',
                 'valid' => true,
                 'confirmed' => true,

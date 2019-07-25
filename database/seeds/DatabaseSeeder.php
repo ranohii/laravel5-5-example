@@ -145,73 +145,73 @@ class DatabaseSeeder extends Seeder
         $nbrTags = 6;
 
         // Posts
-        factory(Post::class)->create([
-            'title' => 'Post 1',
-            'slug' => 'post-1',
-            'seo_title' => 'Post 1',
-            'user_id' => 1,
-            'image' => '/files/img01.jpg',
-        ]);
+        // factory(Post::class)->create([
+        //     'title' => 'Post 1',
+        //     'slug' => 'post-1',
+        //     'seo_title' => 'Post 1',
+        //     'user_id' => 1,
+        //     'image' => '/files/img01.jpg',
+        // ]);
 
-        factory(Post::class)->create([
-            'title' => 'Post 2',
-            'slug' => 'post-2',
-            'seo_title' => 'Post 2',
-            'user_id' => 1,
-            'image' => '/files/img02.jpg',
-        ]);
+        // factory(Post::class)->create([
+        //     'title' => 'Post 2',
+        //     'slug' => 'post-2',
+        //     'seo_title' => 'Post 2',
+        //     'user_id' => 1,
+        //     'image' => '/files/img02.jpg',
+        // ]);
 
-        sleep(2);
+        // sleep(2);
 
-        factory(Post::class)->create([
-            'title' => 'Post 3',
-            'slug' => 'post-3',
-            'seo_title' => 'Post 3',
-            'user_id' => 2,
-            'image' => '/files/user2/img03.jpg',
-        ]);
+        // factory(Post::class)->create([
+        //     'title' => 'Post 3',
+        //     'slug' => 'post-3',
+        //     'seo_title' => 'Post 3',
+        //     'user_id' => 2,
+        //     'image' => '/files/user2/img03.jpg',
+        // ]);
 
-        factory(Post::class)->create([
-            'title' => 'Post 4',
-            'slug' => 'post-4',
-            'seo_title' => 'Post 4',
-            'user_id' => 2,
-            'image' => '/files/user2/img04.jpg',
-        ]);
+        // factory(Post::class)->create([
+        //     'title' => 'Post 4',
+        //     'slug' => 'post-4',
+        //     'seo_title' => 'Post 4',
+        //     'user_id' => 2,
+        //     'image' => '/files/user2/img04.jpg',
+        // ]);
 
-        factory(Post::class)->create([
-            'title' => 'Post 5',
-            'slug' => 'post-5',
-            'seo_title' => 'Post 5',
-            'user_id' => 2,
-            'image' => '/files/user2/img05.jpg',
-        ]);
+        // factory(Post::class)->create([
+        //     'title' => 'Post 5',
+        //     'slug' => 'post-5',
+        //     'seo_title' => 'Post 5',
+        //     'user_id' => 2,
+        //     'image' => '/files/user2/img05.jpg',
+        // ]);
 
-        factory(Post::class)->create([
-            'title' => 'Post 6',
-            'slug' => 'post-6',
-            'seo_title' => 'Post 6',
-            'user_id' => 2,
-            'image' => '/files/user2/img06.jpg',
-        ]);
+        // factory(Post::class)->create([
+        //     'title' => 'Post 6',
+        //     'slug' => 'post-6',
+        //     'seo_title' => 'Post 6',
+        //     'user_id' => 2,
+        //     'image' => '/files/user2/img06.jpg',
+        // ]);
 
-        factory(Post::class)->create([
-            'title' => 'Post 7',
-            'slug' => 'post-7',
-            'seo_title' => 'Post 7',
-            'user_id' => 2,
-            'image' => '/files/user2/img07.png',
-        ]);
+        // factory(Post::class)->create([
+        //     'title' => 'Post 7',
+        //     'slug' => 'post-7',
+        //     'seo_title' => 'Post 7',
+        //     'user_id' => 2,
+        //     'image' => '/files/user2/img07.png',
+        // ]);
 
-        sleep(2);
+        // sleep(2);
 
-        factory(Post::class)->create([
-            'title' => 'Post 8',
-            'slug' => 'post-8',
-            'seo_title' => 'Post 8',
-            'user_id' => 2,
-            'image' => '/files/user2/img08.jpg',
-        ]);
+        // factory(Post::class)->create([
+        //     'title' => 'Post 8',
+        //     'slug' => 'post-8',
+        //     'seo_title' => 'Post 8',
+        //     'user_id' => 2,
+        //     'image' => '/files/user2/img08.jpg',
+        // ]);
 
         // Post::create([
         //     'title' => 'Post 9',
@@ -226,98 +226,98 @@ class DatabaseSeeder extends Seeder
         //     'active' => true,
         // ]);
 
-        factory(Post::class)->create([
-            'title' => 'Post 10',
-            'slug' => 'post-10',
-            'seo_title' => 'Post 10',
-            'user_id' => 2,
-            'image' => '/files/user2/img10.jpg',
-        ]);
+        // factory(Post::class)->create([
+        //     'title' => 'Post 10',
+        //     'slug' => 'post-10',
+        //     'seo_title' => 'Post 10',
+        //     'user_id' => 2,
+        //     'image' => '/files/user2/img10.jpg',
+        // ]);
 
-        $nbrPosts = 10;
+        // $nbrPosts = 10;
 
-        // Tags attachment
-        $posts = Post::all();
+        // // Tags attachment
+        // $posts = Post::all();
 
-        foreach ($posts as $post) {
-            if ($post->id === 9) {
-                $numbers=[1,2,5,6];
-                $n = 4;
-            } else {
-                $numbers = range (1, $nbrTags);
-                shuffle ($numbers);
-                $n = rand (2, 4);
-            }
-            for($i = 0; $i < $n; ++$i) {
-                $post->tags()->attach($numbers[$i]);
-            }
-        }
+        // foreach ($posts as $post) {
+        //     if ($post->id === 9) {
+        //         $numbers=[1,2,5,6];
+        //         $n = 4;
+        //     } else {
+        //         $numbers = range (1, $nbrTags);
+        //         shuffle ($numbers);
+        //         $n = rand (2, 4);
+        //     }
+        //     for($i = 0; $i < $n; ++$i) {
+        //         $post->tags()->attach($numbers[$i]);
+        //     }
+        // }
 
-        // Set categories
-        foreach ($posts as $post) {
-            if ($post->id === 9) {
-                DB::table ('category_post')->insert ([
-                    'category_id' => 1,
-                    'post_id' => 9,
-                ]);
-            } else {
-                $numbers = range (1, $nbrCategories);
-                shuffle ($numbers);
-                $n = rand (1, 2);
-                for ($i = 0; $i < $n; ++$i) {
-                    DB::table ('category_post')->insert ([
-                        'category_id' => $numbers[$i],
-                        'post_id' => $post->id,
-                    ]);
-                }
-            }
-        }
+        // // Set categories
+        // foreach ($posts as $post) {
+        //     if ($post->id === 9) {
+        //         DB::table ('category_post')->insert ([
+        //             'category_id' => 1,
+        //             'post_id' => 9,
+        //         ]);
+        //     } else {
+        //         $numbers = range (1, $nbrCategories);
+        //         shuffle ($numbers);
+        //         $n = rand (1, 2);
+        //         for ($i = 0; $i < $n; ++$i) {
+        //             DB::table ('category_post')->insert ([
+        //                 'category_id' => $numbers[$i],
+        //                 'post_id' => $post->id,
+        //             ]);
+        //         }
+        //     }
+        // }
 
-        // Comments first level
-        foreach (range(1, $nbrPosts) as $i) {
-            factory(Comment::class)->create([
-                'post_id' => $i,
-                'user_id' => rand(1, $nbrUsers),
-            ]);
-        }
+        // // Comments first level
+        // foreach (range(1, $nbrPosts) as $i) {
+        //     factory(Comment::class)->create([
+        //         'post_id' => $i,
+        //         'user_id' => rand(1, $nbrUsers),
+        //     ]);
+        // }
 
-        $comment1 = factory(Comment::class)->create([
-            'post_id' => 2,
-            'user_id' => 3,
-        ]);
+        // $comment1 = factory(Comment::class)->create([
+        //     'post_id' => 2,
+        //     'user_id' => 3,
+        // ]);
 
-        $comment2 = factory(Comment::class)->create([
-            'post_id' => 4,
-            'user_id' => 4,
-        ]);
+        // $comment2 = factory(Comment::class)->create([
+        //     'post_id' => 4,
+        //     'user_id' => 4,
+        // ]);
 
-        $nbrComments = $nbrPosts + 2;
+        // $nbrComments = $nbrPosts + 2;
 
-        // Comments second level
-        $comment3 = factory(Comment::class)->create([
-            'post_id' => 2,
-            'user_id' => 4,
-            //'parent_id' => $nbrComments - 1,
-        ])->makeChildOf($comment1);
+        // // Comments second level
+        // $comment3 = factory(Comment::class)->create([
+        //     'post_id' => 2,
+        //     'user_id' => 4,
+        //     //'parent_id' => $nbrComments - 1,
+        // ])->makeChildOf($comment1);
 
-        factory(Comment::class)->create([
-            'post_id' => 4,
-            'user_id' => 5,
-            //'parent_id' => $nbrComments,
-        ])->makeChildOf($comment2);
+        // factory(Comment::class)->create([
+        //     'post_id' => 4,
+        //     'user_id' => 5,
+        //     //'parent_id' => $nbrComments,
+        // ])->makeChildOf($comment2);
 
-        // Comments third level
-        factory(Comment::class)->create([
-            'post_id' => 2,
-            'user_id' => 2,
-            //'parent_id' => $nbrComments + 1,
-        ])->makeChildOf($comment3);
+        // // Comments third level
+        // factory(Comment::class)->create([
+        //     'post_id' => 2,
+        //     'user_id' => 2,
+        //     //'parent_id' => $nbrComments + 1,
+        // ])->makeChildOf($comment3);
 
-        factory(Comment::class)->create([
-            'post_id' => 2,
-            'user_id' => 1,
-            //'parent_id' => $nbrComments + 1,
-        ])->makeChildOf($comment3);
+        // factory(Comment::class)->create([
+        //     'post_id' => 2,
+        //     'user_id' => 1,
+        //     //'parent_id' => $nbrComments + 1,
+        // ])->makeChildOf($comment3);
 
     }
 }

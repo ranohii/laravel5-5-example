@@ -20,7 +20,7 @@ class DatabaseSeeder extends Seeder
             [
                 'name' => 'GreatAdmin',
                 'email' => 'admin@la.fr',
-                'password' => bcrypt('admin'),
+                'password' => bcrypt('>6~aGej`Cp&eR=g8'),
                 'role' => 'admin',
                 'valid' => true,
                 'confirmed' => true,
@@ -31,7 +31,7 @@ class DatabaseSeeder extends Seeder
             [
                 'name' => 'GreatRedactor',
                 'email' => 'redac@la.fr',
-                'password' => bcrypt('redac'),
+                'password' => bcrypt('zE6zxV6f5*m$7]wQ'),
                 'role' => 'redac',
                 'valid' => true,
                 'confirmed' => true,
@@ -42,7 +42,7 @@ class DatabaseSeeder extends Seeder
             [
                 'name' => 'Walker',
                 'email' => 'walker@la.fr',
-                'password' => bcrypt('walker'),
+                'password' => bcrypt('=ze"k8AAp3d$8$(r'),
                 'role' => 'user',
                 'valid' => true,
                 'confirmed' => true,
@@ -53,7 +53,7 @@ class DatabaseSeeder extends Seeder
             [
                 'name' => 'Slacker',
                 'email' => 'slacker@la.fr',
-                'password' => bcrypt('slacker'),
+                'password' => bcrypt('|h"AxeO`s^19Y7Lr'),
                 'role' => 'user',
                 'valid' => true,
                 'confirmed' => true,
@@ -213,18 +213,18 @@ class DatabaseSeeder extends Seeder
             'image' => '/files/user2/img08.jpg',
         ]);
 
-        Post::create([
-            'title' => 'Post 9',
-            'slug' => 'post-9',
-            'seo_title' => 'Post 9',
-            'user_id' => 2,
-            'image' => '/files/user2/img09.jpg',
-            'meta_description' => 'Aperiam molestiae ut sed vel harum nulla vel.',
-            'meta_keywords' => 'minus,facilis,quo',
-            'excerpt' => 'Consequatur sequi temporibus enim. Neque atque quo et rerum. Nihil quis maxime eos aut qui modi. Eos illo iste quaerat voluptatem illum.',
-            'body' => 'Asperiores dicta necessitatibus ea. Veritatis beatae similique accusantium ad omnis. Nihil laudantium quo dolor expedita. Quia qui voluptas ipsa omnis magni et aut voluptatem. Et molestiae explicabo delectus voluptas voluptates.',
-            'active' => true,
-        ]);
+        // Post::create([
+        //     'title' => 'Post 9',
+        //     'slug' => 'post-9',
+        //     'seo_title' => 'Post 9',
+        //     'user_id' => 2,
+        //     'image' => '/files/user2/img09.jpg',
+        //     'meta_description' => 'Aperiam molestiae ut sed vel harum nulla vel.',
+        //     'meta_keywords' => 'minus,facilis,quo',
+        //     'excerpt' => 'Consequatur sequi temporibus enim. Neque atque quo et rerum. Nihil quis maxime eos aut qui modi. Eos illo iste quaerat voluptatem illum.',
+        //     'body' => 'Asperiores dicta necessitatibus ea. Veritatis beatae similique accusantium ad omnis. Nihil laudantium quo dolor expedita. Quia qui voluptas ipsa omnis magni et aut voluptatem. Et molestiae explicabo delectus voluptas voluptates.',
+        //     'active' => true,
+        // ]);
 
         factory(Post::class)->create([
             'title' => 'Post 10',

@@ -7,7 +7,7 @@
 	<!--- basic page needs
 	================================================== -->
 	<meta charset="utf-8">
-	<title>{{ isset($post) && $post->seo_title ? $post->seo_title :  __(lcfirst('Title')) }}</title>
+	<title>{{ isset($post) && $post->seo_title ? $post->seo_title :  __(lcfirst('yudai hirano')) }}</title>
 	<meta name="description" content="{{ isset($post) && $post->meta_description ? $post->meta_description : __('description') }}">
 	<meta name="author" content="@lang(lcfirst ('Author'))">
 	@if(isset($post) && $post->meta_keywords)
@@ -158,8 +158,7 @@
 
 	            <h4>@lang('About Me')</h4>
 
-								 <p>@lang('1988.12.30
-								 JavaScript(ES6)/Vue.js/Node.js/Webpack/Sass/PHP/Illustrator/Photoshop etc')</p>
+								 <p>@lang('Yudai Hirano<br>1988.12.30<br>JavaScript(ES6)/Vue.js/Node.js/Webpack/Sass/PHP/Illustrator/Photoshop etc')</p>
 
 		      </div> <!-- end footer-info -->
 

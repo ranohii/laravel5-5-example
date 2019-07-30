@@ -1554,8 +1554,8 @@ input::-moz-focus-inner {
  * ------------------------------------------------------------------- */
 header {
 	width: 100%;
-	background: #DBDBDB url(../images/escheresque_@2X.png) repeat;
-	background-size: 46px 29px;
+	background: #DBDBDB url(../images/header.jpg) center;
+	background-size: cover;
 	height: 130px;
 	border-bottom: 1px solid #E5E5E5;
 }
@@ -1651,7 +1651,7 @@ header .logo a {
 .triggers .search-trigger {
 	display: inline-block;
 	font-size: 17px;
-	color: #000000;
+	color: white;
 }
 
 .triggers .menu-toggle {
@@ -1721,7 +1721,7 @@ header .logo a {
 }
 
 .main-navigation li a:hover {
-	color: #000000;
+	color: white;
 }
 
 .main-navigation li > a {
@@ -1730,7 +1730,7 @@ header .logo a {
 
 .main-navigation li.current > a {
 	border-bottom: 2px solid #151515;
-	color: #000000;
+	color: white;
 	font-family: "montserrat-bold", sans-serif;
 }
 
@@ -1841,7 +1841,7 @@ header .logo a {
 		top: 50%;
 		bottom: auto;
 		left: auto;
-		background-color: black;
+		background-color: white;
 		-moz-transition: background 0.2s ease-in-out;
 		-o-transition: background 0.2s ease-in-out;
 		-webkit-transition: background 0.2s ease-in-out;

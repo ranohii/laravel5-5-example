@@ -158,7 +158,7 @@
 
 	            <h4>@lang('About Me')</h4>
 
-								 <p>@lang('Yudai Hirano<br>1988.12.30<br>JavaScript(ES6)/Vue.js/Node.js/Webpack/Sass/PHP/Illustrator/Photoshop etc')</p>
+								 <p>@lang('Yudai Hirano<br>1988.12.30<br>TypeScript/JavaScript(ES6)/Vue.js/Node.js/Webpack/Sass/PHP/Illustrator/Photoshop etc')</p>
 
 		      </div> <!-- end footer-info -->
 
